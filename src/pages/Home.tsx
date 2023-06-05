@@ -1,4 +1,5 @@
 import { List } from "antd";
+import Card from "antd/es/card/Card";
 import { FC } from "react";
 import { Link } from "react-router-dom";
 
@@ -32,18 +33,23 @@ const Home: FC = () => {
   ];
 
   return (
-    <List
-      itemLayout="horizontal"
-      dataSource={data}
-      style={{ textAlign: "left" }}
-      renderItem={(item) => (
-        <List.Item>
-          <Link to={`/tech-blog/${item.id}`} style={{ width: "100%" }}>
-            <List.Item.Meta title={item.title} description={item.description} />
-          </Link>
-        </List.Item>
-      )}
-    />
+    <Card>
+      <List
+        itemLayout="horizontal"
+        dataSource={data}
+        style={{ textAlign: "left" }}
+        renderItem={(item) => (
+          <List.Item>
+            <Link to={`/tech-blog/${item.id}`} style={{ width: "100%" }}>
+              <List.Item.Meta
+                title={item.title}
+                description={item.description}
+              />
+            </Link>
+          </List.Item>
+        )}
+      />
+    </Card>
   );
 };
 

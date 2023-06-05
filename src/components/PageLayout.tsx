@@ -1,6 +1,6 @@
-import { Layout } from "antd";
-import { FC, ReactNode } from "react";
-import { useLocation } from "react-router";
+import { Button, Image, Layout } from "antd";
+import { FC, ReactNode, useCallback } from "react";
+import { useLocation, useNavigate } from "react-router";
 import BackButton from "./BackButton";
 
 const PageLayout: FC<{ children: ReactNode }> = ({ children }) => {
@@ -8,10 +8,33 @@ const PageLayout: FC<{ children: ReactNode }> = ({ children }) => {
 
   const location = useLocation();
 
+  const navigate = useNavigate();
+
+  const handleHomeClick = useCallback(() => {
+    return navigate("/");
+  }, [navigate]);
+
   return (
-    <Layout className="layout" style={{ height: "100vh" }}>
-      <Header style={{ display: "flex", alignItems: "center" }}>
-        {!!location.pathname.split("/")[2] && <BackButton />}
+    <Layout className="layout" style={{ minHeight: "100vh" }}>
+      <Header
+        style={{
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "space-between",
+        }}
+      >
+        {!!location.pathname.split("/")[2] ? <BackButton /> : <div></div>}
+        <Button
+          style={{ backgroundColor: "transparent", border: 0 }}
+          onClick={handleHomeClick}
+        >
+          <Image
+            alt="home"
+            src={"/tech-blog/Narnia Icon.png"}
+            height="1.5rem"
+            preview={false}
+          ></Image>
+        </Button>
       </Header>
       <Content
         style={{
