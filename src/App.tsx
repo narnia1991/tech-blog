@@ -16,7 +16,7 @@ function App() {
         <br />
         I got the sample markdown from
         <br />{" "}
-        githubusercontent(dot)com/rt2zz/e0a1d6ab2682d2c47746950b84c0b6ee/raw/83b8b4814c3417111b9b9bef86a552608506603e/markdown-sample.md
+        gist.githubusercontent(dot)com/candraKriswinarto/38e52a600edf73f3b5626acc5c07403e/raw/22e826e308cf429b8c76b93fcbc5e56e007d0e82/article.md
         <br />
         <br />
         ToDo: <br />

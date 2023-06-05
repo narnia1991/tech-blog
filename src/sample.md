@@ -1,157 +1,108 @@
-# An h1 header
+# Useful JavaScript Code Snippets
 
-Paragraphs are separated by a blank line.
+1. Sort an Array
 
-2nd paragraph. _Italic_, **bold**, and `monospace`. Itemized lists
-look like:
+<Code language="javascript">
+//strings
+const names = ["Seema", "Rekha", "Jaya"];
+names.sort();
+//['Jaya', 'Rekha', 'Seema' ]
 
-- this one
-- that one
-- the other one
+//Numbers
+const numbers = [101, 8, 87];
+numbers.sort((a, b) => {
+return a - b;
+});
+//[ 8, 87, 101 ]
+</Code>
 
-Note that --- not considering the asterisk --- the actual text
-content starts at 4-columns in.
+2. Select a random element
 
-> Block quotes are
-> written like so.
->
-> They can span multiple paragraphs,
-> if you like.
+<Code language="javascript">
+const items = ["Ball", "Bat", "Cup"]
+const randomIndex = Math.floor(Math.random()*items.length)
+items[randomIndex]
+</Code>
 
-Use 3 dashes for an em-dash. Use 2 dashes for ranges (ex., "it's all
-in chapters 12--14"). Three dots ... will be converted to an ellipsis.
-Unicode is supported. ☺
+3. Reverse a string
 
-## An h2 header
-
-Here's a numbered list:
-
-1.  first item
-2.  second item
-3.  third item
-
-Note again how the actual text starts at 4 columns in (4 characters
-from the left side). Here's a code sample:
-
-    # Let me re-iterate ...
-    for i in 1 .. 10 { do-something(i) }
-
-As you probably guessed, indented 4 spaces. By the way, instead of
-indenting the block, you can use delimited blocks, if you like:
-
-```
-define foobar() {
-    print "Welcome to flavor country!";
+<Code language="javascript">
+function reverseString(string) {
+  return string.split(" ").reverse().join(" ")
 }
-```
 
-(which makes copying & pasting easier). You can optionally mark the
-delimited block for Pandoc to syntax highlight it:
+revereseString("Random String")
+</Code>
 
-```python
-import time
-# Quick, count to ten!
-for i in range(10):
-    # (but not *too* quick)
-    time.sleep(0.5)
-    print i
-```
+4. Check if element has a class
 
-### An h3 header
+<Code language="javascript">
+const element = document.querySelector("#element")
+element.classList.contains("active")
+</Code>
 
-Now a nested list:
+5. String interpolation
 
-1.  First, get these ingredients:
+<Code language="javascript">
+const name = "Jaya"
+console.log(`Hi, ${name}. You have ${2 ** 3} new notifications.`}
+//Hi, Jaya. You have 8 new notifications.
+</Code>
 
-    - carrots
-    - celery
-    - lentils
+6. Loop through an array
 
-2.  Boil some water.
+<Code language="javascript">
+const cars = ["Ford", "BMW", "Audi" ]
+for (let car of cars) {
+  console.log(car)
+}
 
-3.  Dump everything in the pot and follow
-    this algorithm:
+/_
+Ford
+BMW
+Audi
+_/
+</Code>
 
-        find wooden spoon
-        uncover pot
-        stir
-        cover pot
-        balance wooden spoon precariously on pot handle
-        wait 10 minutes
-        goto first step (or shut off burner when done)
+7. Get current time
 
-    Do not bump wooden spoon or it will fall.
+<Code language="javascript">
+const date = new Date()
+const currentTime = 
+  `${date.getHours()}:${date.getMintues()}:${date.getSeconds()}`
 
-Notice again how text always lines up on 4-space indents (including
-that last line which continues item 3 above).
+console.log(currentTimes)
+//example output: "22:16:41"
+</Code>
 
-Here's a link to [a website](http://foo.bar), to a [local
-doc](local-doc.html), and to a [section heading in the current
-doc](#an-h2-header). Here's a footnote [^1].
+8. Replace part of a string
 
-[^1]: Footnote text goes here.
+<Code language="javascript">
+const string = "You are awesome."
+const replacedString = string.replace("You", "We")
 
-Tables can look like this:
+console.log(replacedString) //Output: "We are awesome"
+</Code>
 
-size material color
+9. Destructing variable assignment
 
----
+<Code language="javascript">
+let profile = ['bob', 34, 'carpenter'];
+let [name, age, job] = profile;
+console.log(name);
+// bob
+</Code>
 
-9 leather brown
-10 hemp canvas natural
-11 glass transparent
+10. Using the spread operator
 
-Table: Shoes, their sizes, and what they're made of
-
-(The above is the caption for the table.) Pandoc also supports
-multi-line tables:
-
----
-
-keyword text
-
----
-
-red Sunsets, apples, and
-other red or reddish
-things.
-
-green Leaves, grass, frogs
-and other things it's
-not easy being.
-
----
-
-A horizontal rule follows.
-
----
-
-Here's a definition list:
-
-apples
-: Good for making applesauce.
-oranges
-: Citrus!
-tomatoes
-: There's no "e" in tomatoe.
-
-Again, text is indented 4 spaces. (Put a blank line between each
-term/definition pair to spread things out more.)
-
-Here's a "line block":
-
-| Line one
-| Line too
-| Line tree
-
-and images can be specified like so:
-
-![example image](example-image.jpg "An exemplary image")
-
-Inline math equations go in like so: $\omega = d\phi / dt$. Display
-math should get its own line and be put in in double-dollarsigns:
-
-$$I = \int \rho R^{2} dV$$
-
-And note that you can backslash-escape any punctuation characters
-which you wish to be displayed literally, ex.: \`foo\`, \*bar\*, etc.
+<Code language="javascript">
+let data = [1,2,3,4,5];
+console.log(...data);
+//  1 2 3 4 5
+let data2 = [6,7,8,9,10];
+let combined = [...data, ...data2];
+console.log(...combined);
+// 1 2 3 4 5 6 7 8 9 10
+console.log(Math.max(...combined));
+// 10
+</Code>
