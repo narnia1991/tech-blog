@@ -1,24 +1,36 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
+import PageLayout from "./components/PageLayout";
+import Blog from "./pages/Blog";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div style={{ textAlign: "left", padding: "1rem" }}>
+        <div style={{ fontSize: "4rem", color: "orange" }}>⚠</div>
+        <br />
+        This is a work in progress.
+        <br />
+        Following the video from youtube(dot)com/watch?v=Od-Uj5RSsuM
+        <br />
+        I got the sample markdown from
+        <br />{" "}
+        githubusercontent(dot)com/rt2zz/e0a1d6ab2682d2c47746950b84c0b6ee/raw/83b8b4814c3417111b9b9bef86a552608506603e/markdown-sample.md
+        <br />
+        <br />
+        ToDo: <br />
+        Fix styles <br />
+        Add syntax highlighter <br />
+        Add Copy Paste
+        <br />
+      </div>
+      <PageLayout>
+        <Routes>
+          <Route path="/blog" element={<Home />}></Route>
+          <Route path="/blog/:blogId" element={<Blog />}></Route>
+        </Routes>
+      </PageLayout>
     </div>
   );
 }
