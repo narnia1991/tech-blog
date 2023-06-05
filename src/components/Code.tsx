@@ -7,9 +7,11 @@ const Code: FC<{ children: string; language: string }> = ({
   language,
 }) => {
   return (
-    <SyntaxHighlighter language={language} style={materialDark}>
-      {children}
-    </SyntaxHighlighter>
+    <div className="">
+      <SyntaxHighlighter language={language} style={materialDark}>
+        {children}
+      </SyntaxHighlighter>
+    </div>
   );
 };
 

@@ -1,4 +1,4 @@
-import { Button, Image, Layout } from "antd";
+import { Button, Card, Image, Layout } from "antd";
 import { FC, ReactNode, useCallback } from "react";
 import { useLocation, useNavigate } from "react-router";
 import BackButton from "./BackButton";
@@ -36,6 +36,14 @@ const PageLayout: FC<{ children: ReactNode }> = ({ children }) => {
           ></Image>
         </Button>
       </Header>
+      <Card style={{ textAlign: "center" }}>
+        <div style={{ fontSize: "2rem", color: "orange" }}>⚠</div>
+        <div>
+          This is still a work in progress. The articles are still just hard
+          coded and not being fetched from an API. I will work on creating a
+          service to do that.
+        </div>
+      </Card>
       <Content
         style={{
           padding: "2rem",
