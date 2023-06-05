@@ -38,7 +38,7 @@ const Home: FC = () => {
       style={{ textAlign: "left" }}
       renderItem={(item) => (
         <List.Item>
-          <Link to={`/blog/${item.id}`} style={{ width: "100%" }}>
+          <Link to={`/tech-blog/${item.id}`} style={{ width: "100%" }}>
             <List.Item.Meta title={item.title} description={item.description} />
           </Link>
         </List.Item>

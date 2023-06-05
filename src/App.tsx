@@ -27,8 +27,8 @@ function App() {
       </div>
       <PageLayout>
         <Routes>
-          <Route path="/blog" element={<Home />}></Route>
-          <Route path="/blog/:blogId" element={<Blog />}></Route>
+          <Route path="/tech-blog" element={<Home />}></Route>
+          <Route path="/tech-blog/:blogId" element={<Blog />}></Route>
         </Routes>
       </PageLayout>
     </div>
