@@ -1,18 +1,12 @@
 import { Button, Card, Image, Layout } from "antd";
-import { FC, ReactNode, useCallback } from "react";
-import { useLocation, useNavigate } from "react-router";
+import { FC, ReactNode } from "react";
+import { useLocation } from "react-router";
 import BackButton from "./BackButton";
 
 const PageLayout: FC<{ children: ReactNode }> = ({ children }) => {
   const { Header, Content, Footer } = Layout;
 
   const location = useLocation();
-
-  const navigate = useNavigate();
-
-  const handleHomeClick = useCallback(() => {
-    return navigate("/");
-  }, [navigate]);
 
   return (
     <Layout className="layout" style={{ minHeight: "100vh" }}>
@@ -24,17 +18,16 @@ const PageLayout: FC<{ children: ReactNode }> = ({ children }) => {
         }}
       >
         {!!location.pathname.split("/")[2] ? <BackButton /> : <div></div>}
-        <Button
-          style={{ backgroundColor: "transparent", border: 0 }}
-          onClick={handleHomeClick}
-        >
-          <Image
-            alt="home"
-            src={"/tech-blog/Narnia Icon.png"}
-            height="1.5rem"
-            preview={false}
-          ></Image>
-        </Button>
+        <a href="https://narnia1991.github.io">
+          <Button style={{ backgroundColor: "transparent", border: 0 }}>
+            <Image
+              alt="home"
+              src={"/tech-blog/Narnia Icon.png"}
+              height="1.5rem"
+              preview={false}
+            ></Image>
+          </Button>
+        </a>
       </Header>
       <Card style={{ textAlign: "center" }}>
         <div style={{ fontSize: "2rem", color: "orange" }}>⚠</div>
