@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/tech-blog/static/css/main.6e55cbea.css",
-    "main.js": "/tech-blog/static/js/main.c5c5c181.js",
+    "main.js": "/tech-blog/static/js/main.c0e052fb.js",
     "static/js/580.e55958cb.chunk.js": "/tech-blog/static/js/580.e55958cb.chunk.js",
     "static/js/482.ee0ba6dc.chunk.js": "/tech-blog/static/js/482.ee0ba6dc.chunk.js",
     "static/js/787.f587e8d5.chunk.js": "/tech-blog/static/js/787.f587e8d5.chunk.js",
@@ -9,11 +9,11 @@
     "static/media/objects-vs-arrays.md": "/tech-blog/static/media/objects-vs-arrays.1ed81d9034b3caacb3d7.md",
     "index.html": "/tech-blog/index.html",
     "main.6e55cbea.css.map": "/tech-blog/static/css/main.6e55cbea.css.map",
-    "main.c5c5c181.js.map": "/tech-blog/static/js/main.c5c5c181.js.map",
+    "main.c0e052fb.js.map": "/tech-blog/static/js/main.c0e052fb.js.map",
     "787.f587e8d5.chunk.js.map": "/tech-blog/static/js/787.f587e8d5.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.6e55cbea.css",
-    "static/js/main.c5c5c181.js"
+    "static/js/main.c0e052fb.js"
   ]
 }
