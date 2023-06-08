@@ -10,6 +10,12 @@ const Home: FC = () => {
       description: "Battle of the state types.",
       fileName: "objects-vs-arrays",
     },
+
+    {
+      title: "Do you even Reduce?",
+      description: "My Favorite Array Method",
+      fileName: "do-you-even-reduce",
+    },
   ];
 
   return (
