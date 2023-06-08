@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkblog=self.webpackChunkblog||[]).push([[545],{6545:function(e,s,u){e.exports=u.p+"static/media/do-you-even-reduce.642db5f584d748499194.md"}}]);
