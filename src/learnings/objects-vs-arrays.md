@@ -8,9 +8,9 @@ Here comes the question of what type of state should you implement? Array of Obj
 Let's have a comparison. Let's say we have an array that is returned by the backend.
 <Code language="javascript">
 const data = [
-{id: 1,value: "value 1"},
-{id: 2,value: "value 2"},
-{id: 3,value: "value 3"},
+&nbsp;&nbsp;{id: 1,value: "value 1"},
+&nbsp;&nbsp;{id: 2,value: "value 2"},
+&nbsp;&nbsp;{id: 3,value: "value 3"},
 ]
 </Code>
 <br/>
@@ -20,9 +20,9 @@ const data = [
 State:  
 <Code language="javascript">
 const state = [
-{id: 1,value: "value 1"},
-{id: 2,value: "value 2"},
-{id: 3,value: "value 3"}
+&nbsp;&nbsp;{id: 1,value: "value 1"},
+&nbsp;&nbsp;{id: 2,value: "value 2"},
+&nbsp;&nbsp;{id: 3,value: "value 3"}
 ]
 </Code>
 <br/>
@@ -30,7 +30,7 @@ const state = [
 Rendering:
 <Code language="javascript">
 arr.map(item =>
-\<div key={item.id}>{item.value}\</div>
+&nbsp;&nbsp;\<div key={item.id}>{item.value}\</div>
 )
 </Code>
 <br/>
@@ -47,14 +47,14 @@ arr.find(item => item.id===2)
 State:  
 <Code language="javascript">
 const stateObj = apiData.reduce((acc, {id, value})=> {
-acc[id] = {value}
-return acc
+&nbsp;&nbsp;acc[id] = {value}
+&nbsp;&nbsp;return acc
 },{})
 //Output:
 {
-"1" : {value: "value 1"},
-"2" : {value: "value 2"},
-"3" : {value: "value 3"},
+&nbsp;&nbsp;"1" : {value: "value 1"},
+&nbsp;&nbsp;"2" : {value: "value 2"},
+&nbsp;&nbsp;"3" : {value: "value 3"},
 }
 </Code>
 
@@ -62,9 +62,8 @@ return acc
 
 Rendering:
 <Code>
-Object.entries(obj)
-.map(([key, value]) =>
-\<div key={key}>{value}\</div>
+Object.entries(obj).map(([key, value]) =>
+&nbsp;&nbsp;\<div key={key}>{value}\</div>
 )
 </Code>
 <br/>
