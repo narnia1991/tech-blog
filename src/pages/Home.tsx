@@ -18,7 +18,12 @@ const Home: FC = () => {
     {
       title: "Look at Me",
       description: 'Finally! My very own "Portfolio"',
-      fileName: "do-you-even-reduce",
+      fileName: "look-at-me",
+    },
+    {
+      title: "One Percent Better Everytime",
+      description: "Collection of my acquired experience",
+      fileName: "one-percent-better",
     },
   ];
 
@@ -30,7 +35,7 @@ const Home: FC = () => {
         style={{ textAlign: "left" }}
         renderItem={(item) => (
           <List.Item>
-            <Link to={`/tech-blog/${item.fileName}`} style={{ width: "100%" }}>
+            <Link to={`/${item.fileName}`} style={{ width: "100%" }}>
               <List.Item.Meta
                 title={item.title}
                 description={item.description}
