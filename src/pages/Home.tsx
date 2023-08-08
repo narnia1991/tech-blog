@@ -18,7 +18,12 @@ const Home: FC = () => {
     {
       title: "Look at Me",
       description: 'Finally! My very own "Portfolio"',
-      fileName: "do-you-even-reduce",
+      fileName: "look-at-me",
+    },
+    {
+      title: "One Percent Better Everytime",
+      description: "Collection of my acquired experience",
+      fileName: "one-percent-better",
     },
   ];
 
