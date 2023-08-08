@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkblog=self.webpackChunkblog||[]).push([[363],{6363:function(e,b,t){e.exports=t.p+"static/media/one-percent-better.3ba9d721e77cab3b11b4.md"}}]);
