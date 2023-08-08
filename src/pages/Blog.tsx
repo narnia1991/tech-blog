@@ -10,7 +10,7 @@ const Blog: FC = () => {
   const location = useLocation();
   const navigate = useNavigate();
 
-  const fileName = location.pathname.split("/tech-blog/")[1];
+  const fileName = location.pathname.split("/")[1];
 
   const fetchMd = useCallback(async () => {
     try {
@@ -24,7 +24,7 @@ const Blog: FC = () => {
       const content = await fetch(link.default);
       setMdContent(await content.text());
     } catch (err) {
-      navigate("/tech-blog");
+      navigate("/");
       console.error(err);
     }
   }, [navigate, fileName]);
