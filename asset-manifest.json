@@ -1,23 +1,23 @@
 {
   "files": {
     "main.css": "/tech-blog/static/css/main.6e55cbea.css",
-    "main.js": "/tech-blog/static/js/main.3872f8c7.js",
-    "static/js/545.14203b33.chunk.js": "/tech-blog/static/js/545.14203b33.chunk.js",
-    "static/js/295.5ce58b4c.chunk.js": "/tech-blog/static/js/295.5ce58b4c.chunk.js",
-    "static/js/580.c23b1fd0.chunk.js": "/tech-blog/static/js/580.c23b1fd0.chunk.js",
-    "static/js/363.da5af018.chunk.js": "/tech-blog/static/js/363.da5af018.chunk.js",
+    "main.js": "/tech-blog/static/js/main.33227bb8.js",
+    "static/js/545.51611331.chunk.js": "/tech-blog/static/js/545.51611331.chunk.js",
+    "static/js/295.00d148cf.chunk.js": "/tech-blog/static/js/295.00d148cf.chunk.js",
+    "static/js/580.6721d9a8.chunk.js": "/tech-blog/static/js/580.6721d9a8.chunk.js",
+    "static/js/363.a197af5a.chunk.js": "/tech-blog/static/js/363.a197af5a.chunk.js",
     "static/js/787.f587e8d5.chunk.js": "/tech-blog/static/js/787.f587e8d5.chunk.js",
-    "static/media/one-percent-better.md": "/tech-blog/static/media/one-percent-better.3ba9d721e77cab3b11b4.md",
-    "static/media/look-at-me.md": "/tech-blog/static/media/look-at-me.a5897e5c366d750d2c31.md",
-    "static/media/objects-vs-arrays.md": "/tech-blog/static/media/objects-vs-arrays.8198ba9506e4bc5eebd6.md",
-    "static/media/do-you-even-reduce.md": "/tech-blog/static/media/do-you-even-reduce.642db5f584d748499194.md",
+    "static/media/one-percent-better.md": "/tech-blog/static/media/one-percent-better.15384a3d3a840d93573e.md",
+    "static/media/look-at-me.md": "/tech-blog/static/media/look-at-me.888e3e00cc5925cf4dc1.md",
+    "static/media/objects-vs-arrays.md": "/tech-blog/static/media/objects-vs-arrays.fff54e314362b5b4feb6.md",
+    "static/media/do-you-even-reduce.md": "/tech-blog/static/media/do-you-even-reduce.76c2ca9dab8664255bb4.md",
     "index.html": "/tech-blog/index.html",
     "main.6e55cbea.css.map": "/tech-blog/static/css/main.6e55cbea.css.map",
-    "main.3872f8c7.js.map": "/tech-blog/static/js/main.3872f8c7.js.map",
+    "main.33227bb8.js.map": "/tech-blog/static/js/main.33227bb8.js.map",
     "787.f587e8d5.chunk.js.map": "/tech-blog/static/js/787.f587e8d5.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.6e55cbea.css",
-    "static/js/main.3872f8c7.js"
+    "static/js/main.33227bb8.js"
   ]
 }
