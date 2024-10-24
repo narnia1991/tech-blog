@@ -40,14 +40,16 @@ const PageLayout: FC<{ children: ReactNode }> = ({ children }) => {
       <Content
         style={{
           padding: "2rem",
-          width: "70%",
+          width: window.innerWidth > 600 ? "70%" : "100%",
           height: "100%",
           margin: "0 auto",
         }}
       >
         {children}
       </Content>
-      <Footer style={{ textAlign: "center" }}>©2023 narnia1991</Footer>
+      <Footer style={{ textAlign: "center" }}>
+        ©{new Date().getFullYear()} narnia1991
+      </Footer>
     </Layout>
   );
 };
